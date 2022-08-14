@@ -1,0 +1,19 @@
+print('Calculo da conta de água em Tupã')
+while True:
+    consumo = -1
+    while not consumo >= 0:
+        consumo = int(input('Digite seu consumo: '))
+    if 0 <= consumo <= 10:
+        print(f'O valor da sua conta de água será de R$29.00')
+    if 10 < consumo <= 20:
+        print(f'O valor da sua conta será de R${4.04 * consumo - 11.40:.2f}')
+    if 20 < consumo <= 50:
+        print(f'O valor da sua conta será de R${6.21 * consumo - 59.8:.2f}')
+    if consumo > 50:
+        print(f'O valor da sua conta será de R${7.43 * consumo - 120.8}')
+    continuar = ' '
+    while not continuar in 'sn':
+        continuar = input('Gostaria de continuar?[S][N]: ').lower().strip()[0]
+    if 'n' in continuar:
+        break
+print('Fim do programa')
