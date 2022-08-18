@@ -10,7 +10,7 @@ while True:
     if 20 < consumo <= 50:
         print(f'O valor da sua conta será de R${6.21 * consumo - 59.8:.2f}')
     if consumo > 50:
-        print(f'O valor da sua conta será de R${7.43 * consumo - 120.8}')
+        print(f'O valor da sua conta será de R${7.43 * consumo - 120.8:.2f}')
     continuar = ' '
     while not continuar in 'sn':
         continuar = input('Gostaria de continuar?[S][N]: ').lower().strip()[0]
